@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
+    <script src="./browse.js" defer></script>
     <title>AnimeInfo</title>
 </head>
 
@@ -28,21 +29,14 @@
 
                     <div class="animes__header">
                         <h2>All <span class="blue">Animes</span></h2>
-                        <select id="filter">
-                            <option value="" disabled selected>Sort</option>
-                            <option value="LOW_TO_HIGH">Ratings, Low to High</option>
-                            <option value="HIGH_TO_LOW">Ratings, High to Low</option>
-                        </select>
+                        <form id="search__form">
+                            <input placeholder="placeholder" name="search" id="search" type="text" class="validate">
+                            <label for="search"><button type="submit">Search</button></label>
+                        </form>
                     </div>
                     
-                    <div class="animes">
-                        <div class="anime">
-                            <figure class="anime__img--wrapper">
-                                <img src="" class="anime__img" alt="">
-                            </figure>
-                            <div class="anime__title">One Piece</div>
-                            <div class="anime__ratings">100/100</div>
-                        </div>
+                    <div class="anime__list">
+
                     </div>
 
                 </div>
